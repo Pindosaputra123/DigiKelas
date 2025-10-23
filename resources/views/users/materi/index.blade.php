@@ -22,10 +22,10 @@
             {{-- Menampilkan gambar untuk setiap materi --}}
             <img 
               src="@if(Storage::disk('public')->exists($materi->image)) 
-                      {{ asset('storage/'. $materi->image) }} 
-                    @else 
-                      {{ asset('assets/img/'. $materi->image) }} 
-                    @endif" 
+                {{ asset('storage/'. $materi->image) }} 
+                @else 
+                  {{ asset($materi->image) }} 
+                @endif" 
               style="width: 45px;" 
               alt="{{ $materi->title }}">
           </h2>
@@ -53,8 +53,8 @@
         src="@if(Storage::disk('public')->exists($audio->audio)) 
                 {{ asset('storage/'. $audio->audio) }} 
               @else 
-                {{ asset('assets/'. $audio->audio) }} 
-              @endif" 
+                {{ asset($audio->audio) }} 
+              @endif"
         type="audio/mpeg">
     </audio>
   @endif
