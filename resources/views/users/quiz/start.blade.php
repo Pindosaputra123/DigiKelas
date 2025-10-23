@@ -73,10 +73,10 @@
         <div>{{ $index + 1 }}.</div>
 
         {{-- Tampilkan pertanyaan, dengan ukuran font disesuaikan jika non-latin --}}
-        @if (preg_match("/[\x{0000}-\x{007F}]/u", $quiz->question))
-          <p style="font-size: 1rem; margin-left: 10px;">{{ $quiz->question }}</p>
+        @if (preg_match("/[\x{0000}-\x{007F}]/u", $quiz->title))
+        <p style="font-size: 1rem; margin-left: 10px;">{{ $quiz->title }}</p>
         @else
-          <p class="mb-4" style="font-size: 1.3rem; margin-top:-5px; margin-left: 10px;">{{ $quiz->question }}</p>
+        <p class="mb-4" style="font-size: 1.3rem; margin-top:-5px; margin-left: 10px;">{{ $quiz->title }}</p>
         @endif
       </div>
 
