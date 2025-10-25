@@ -81,10 +81,10 @@
                 @foreach ($questions as $index => $q)
                 <tr>
                   <td>{{ $questions->firstItem() + $index }}</td>
-                  @if (preg_match("/[\x{0000}-\x{007F}]/u", $q->question))
-                  <td>{{ $q->question }}</td>
+                  @if (preg_match("/[\x{0000}-\x{007F}]/u", $q->title))
+                  <td>{{ $q->title }}</td>
                   @else
-                  <td style="font-size: 18px;">{{ $q->question }}</td>
+                  <td style="font-size: 18px;">{{ $q->title }}</td>
                   @endif
                   @foreach($q->answer as $answer)
                   @if($answer->correct === 1)
