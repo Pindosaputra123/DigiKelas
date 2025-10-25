@@ -48,9 +48,6 @@ class AdminDashboardController extends Controller
             // Total semua jawaban quiz
             'answersQuiz' => Result::all()->count(),
 
-            // Total semua thread forum
-            'threads' => Thread::all()->count(),
-
             // Membuat data chart untuk ditampilkan di dashboard
             'chart' => $chart->build()
         ]);
