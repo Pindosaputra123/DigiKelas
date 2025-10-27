@@ -74,7 +74,6 @@
                   <th class="text-white">No</th>
                   <th class="text-white">Gambar</th>
                   <th class="text-white text-center">Nama Aksara</th>
-                  <th class="text-white text-center">Kategori</th>
                   <th class="text-white text-center">Audio</th>
                   <th class="text-white">Tanggal Pembuatan</th>
                   <th class="text-white">Tanggal Update</th>
@@ -85,11 +84,11 @@
                 @foreach($materis as $index => $materi)
                 <tr>
                   <td>{{ $materis->firstItem() + $index }}</td>
-                  <td><img src="@if(Storage::disk('public')->exists($materi->image)) {{ asset('storage/'. $materi->image) }} @else {{ asset('assets/img/'. $materi->image) }} @endif" alt="Materi Image - {{ $materi->title }}" class="materiImage" data-url-img="@if(Storage::disk('public')->exists($materi->image)) {{ asset('storage/'. $materi->image) }} @else {{ asset('assets/img/'. $materi->image) }} @endif" data-title-materi="{{ $materi->title }}" @if($materi->category == 'huruf') style="width: 40px;" @elseif($materi->category == 'pasangan') style="width: 35px;" @else style="width: 23px;" @endif></td>
+                  <td><img src="@if(Storage::disk('public')->exists($materi->image)) {{ asset('storage/' . $materi->image) }} @else {{ asset($materi->image) }} @endif" alt="Materi Image - {{ $materi->title }}" class="materiImage" data-url-img="@if(Storage::disk('public')->exists($materi->image)) {{ asset('storage/' . $materi->image) }} @else {{ asset($materi->image) }} @endif" data-title-materi="{{ $materi->title }}" style="width: 40px;"></td>
                   <td class="text-capitalize text-center">{{ $materi->title }}</td>
-                  <td class="text-center">@if($materi->category == 'huruf')<span class="badge bg-label-success fw-bold">{{ 'Huruf' }}</span>@elseif ($materi->category == 'pasangan')<span class="badge bg-label-info fw-bold">{{ 'Pasangan'}}</span>@else<span class="badge bg-label-warning fw-bold">{{ 'Sandhangan'}}</span>@endif</td>
+                  
                   <td>@if($materi->audio)<audio controls>
-                      <source src="@if(Storage::disk('public')->exists($materi->audio)) {{ asset('storage/'. $materi->audio) }} @else {{ asset('assets/'. $materi->audio) }} @endif" type="audio/mpeg">
+                      <source src="@if(Storage::disk('public')->exists($materi->audio)) {{ asset('storage/' . $materi->audio) }} @else {{ asset($materi->audio) }} @endif" type="audio/mpeg">
                     </audio>@else Tidak Ada Audio @endif
                   </td>
                   <td>{{ $materi->created_at->locale('id')->isoFormat('D MMMM YYYY | H:mm') }}</td>
@@ -168,22 +167,6 @@
               <div class="form-text @error('audio') d-none @enderror">Ukuran audio maks 250 KB</div>
             </div>
           </div>
-          <div class="row">
-            <div class="col">
-              <label for="category" class="form-label required-label">Kategori</label>
-              <select class="form-select @error('category') is-invalid @enderror" name="category" id="category" style="cursor: pointer;">
-                <option value="" selected disabled>Pilih Kategori</option>
-                <option @if(old('category')=='huruf' ) selected @endif value="huruf">Huruf Aksara</option>
-                <option @if(old('category')=='pasangan' ) selected @endif value="pasangan">Pasangan</option>
-                <option @if(old('category')=='sandhangan' ) selected @endif value="sandhangan">Sandhangan</option>
-              </select>
-              @error('category')
-              <div class="invalid-feedback" style="margin-bottom: -3px;">
-                {{ $message }}
-              </div>
-              @enderror
-            </div>
-          </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-outline-danger cancelModalAddMateri" data-bs-dismiss="modal"><i class='bx bx-share fs-6' style="margin-bottom: 3px;"></i>&nbsp;Batal</button>
@@ -240,21 +223,6 @@
               </div>
               @enderror
               <div class="form-text @error('audioEdit') d-none @enderror">Ukuran audio maks 250 KB</div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <label for="categoryEdit" class="form-label required-label">Kategori</label>
-              <select class="form-select @error('categoryEdit') is-invalid @enderror" name="categoryEdit" id="categoryEdit" style="cursor: pointer;">
-                <option id="huruf" @if(old('categoryEdit')=='huruf' ) selected @endif value="huruf">Huruf Aksara</option>
-                <option id="pasangan" @if(old('categoryEdit')=='pasangan' ) selected @endif value="pasangan">Pasangan</option>
-                <option id="sandhangan" @if(old('categoryEdit')=='sandhangan' ) selected @endif value="sandhangan">Sandhangan</option>
-              </select>
-              @error('categoryEdit')
-              <div class="invalid-feedback" style="margin-bottom: -3px;">
-                {{ $message }}
-              </div>
-              @enderror
             </div>
           </div>
         </div>

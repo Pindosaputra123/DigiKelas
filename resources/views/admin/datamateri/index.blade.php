@@ -85,11 +85,11 @@
                 @foreach($materis as $index => $materi)
                 <tr>
                   <td>{{ $materis->firstItem() + $index }}</td>
-                  <td><img src="@if(Storage::disk('public')->exists($materi->image)) {{ asset('storage/'. $materi->image) }} @else {{ asset('assets/img/'. $materi->image) }} @endif" alt="Materi Image - {{ $materi->title }}" class="materiImage" data-url-img="@if(Storage::disk('public')->exists($materi->image)) {{ asset('storage/'. $materi->image) }} @else {{ asset('assets/img/'. $materi->image) }} @endif" data-title-materi="{{ $materi->title }}" @if($materi->category == 'huruf') style="width: 40px;" @elseif($materi->category == 'pasangan') style="width: 35px;" @else style="width: 23px;" @endif></td>
+                  <td><img src="@if(Storage::disk('public')->exists($materi->image)) {{ asset('storage/' . $materi->image) }} @else {{ asset($materi->image) }} @endif" alt="Materi Image - {{ $materi->title }}" class="materiImage" data-url-img="@if(Storage::disk('public')->exists($materi->image)) {{ asset('storage/' . $materi->image) }} @else {{ asset($materi->image) }} @endif" data-title-materi="{{ $materi->title }}" style="width: 40px;"></td>
                   <td class="text-capitalize text-center">{{ $materi->title }}</td>
                   
                   <td>@if($materi->audio)<audio controls>
-                      <source src="@if(Storage::disk('public')->exists($materi->audio)) {{ asset('storage/'. $materi->audio) }} @else {{ asset('assets/'. $materi->audio) }} @endif" type="audio/mpeg">
+                      <source src="@if(Storage::disk('public')->exists($materi->audio)) {{ asset('storage/' . $materi->audio) }} @else {{ asset($materi->audio) }} @endif" type="audio/mpeg">
                     </audio>@else Tidak Ada Audio @endif
                   </td>
                   <td>{{ $materi->created_at->locale('id')->isoFormat('D MMMM YYYY | H:mm') }}</td>
