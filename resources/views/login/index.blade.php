@@ -66,7 +66,7 @@
 
             <!-- Heading login -->
             <h4 class="mb-2">Welcome Back!</h4>
-            <p class="mb-3">Silahkan login dan mulai belajar.</p>
+            <p class="mb-3">Silahkan login dan mulailah belajar.</p>
 
             <!-- Pesan flash dari session -->
             <div class="flash-message" data-flash-message="@if(session()->has('loginError')) {{ session('loginError') }} @endif"></div>
