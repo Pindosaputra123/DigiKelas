@@ -1,0 +1,93 @@
+/* ---------------------------------------------
+   Font Import
+   --------------------------------------------- */
+
+/* 
+   Mengimpor font "Boxicons" dari folder vendor.
+   Font ini digunakan untuk menampilkan ikon-ikon
+   vektor ringan yang biasanya dipakai di dashboard
+   atau UI elemen seperti tombol dan navigasi.
+*/
+@font-face {
+    font-family: "Boxicons";
+    src: url("../vendors/assets/vendor/fonts/boxicons/boxicons.woff2")
+        format("woff2");
+    font-display: swap; /* Memastikan font tampil cepat dengan fallback font lebih dulu */
+}
+
+/* ---------------------------------------------
+   Kustomisasi Scrollbar
+   --------------------------------------------- */
+
+/* 
+   Mengatur lebar scrollbar di browser berbasis WebKit (Chrome, Edge, Safari).
+   Diberikan ukuran kecil (5px) agar tampilan scrollbar lebih halus dan minimalis.
+*/
+::-webkit-scrollbar {
+    width: 5px;
+    cursor: pointer;
+}
+
+/* 
+   Warna dasar area track scrollbar.
+   Area ini adalah latar belakang di mana thumb (scroll handle) bergerak.
+*/
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* 
+   Warna dan gaya scrollbar-thumb (bagian yang digerakkan).
+   Menggunakan warna utama aplikasi (#696cff) dan ujung membulat.
+*/
+::-webkit-scrollbar-thumb {
+    background: #696cff !important;
+    border-radius: 6px;
+}
+
+/* ---------------------------------------------
+   Elemen Kustomisasi Umum
+   --------------------------------------------- */
+
+/* 
+   Class .box digunakan untuk elemen berbentuk persegi
+   seperti card kecil, ikon, atau preview area.
+   Ukuran defaultnya adalah 130px x 130px.
+*/
+.box {
+    width: 130px;
+    height: 130px;
+}
+
+/* 
+   Mengatur warna teks pada elemen h2 di dalam .card-body
+   agar terlihat tegas dan kontras (hitam pekat).
+*/
+.card-body h2 {
+    color: #040404;
+}
+
+/* ---------------------------------------------
+   Gaya untuk Radio Button (Quiz atau Pilihan Jawaban)
+   --------------------------------------------- */
+
+/*
+   Menentukan tampilan label ketika radio button
+   dalam sebuah list <li> dipilih.
+   Label akan berubah warna menjadi ungu kebiruan (#696cff),
+   latar belakang menjadi lembut (#e7e7ff),
+   serta teks menjadi sedikit lebih tebal.
+   Efek ini membuat pilihan yang aktif terlihat lebih jelas.
+*/
+li input[type="radio"]:checked + label {
+    font-weight: 500 !important;
+    color: #696cff !important;
+    background-color: #e7e7ff !important;
+    padding: 0.42em 0.493em;
+    font-size: 0.9125em;
+    line-height: 1;
+    border-radius: 0.25rem;
+    word-wrap: break-word;
+    white-space: normal;
+    display: block;
+}
