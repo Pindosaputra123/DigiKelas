@@ -96,10 +96,10 @@
     <div class="d-flex">
       <div>{{ $index + 1 }}.</div>
       {{-- Cek apakah pertanyaan berisi karakter latin atau tidak --}}
-      @if (preg_match("/[\x{0000}-\x{007F}]/u", $score->question->question))
-      <p style="font-size: 1rem; margin-left: 10px;">{{ $score->question->question }}</p>
+      @if (preg_match("/[\x{0000}-\x{007F}]/u", $score->question->title))
+      <p style="font-size: 1rem; margin-left: 10px;">{{ $score->question->title }}</p>
       @else
-      <p style="font-size: 1.3rem; margin-top:-5px; margin-left: 10px;">{{ $score->question->question }}</p>
+      <p style="font-size: 1.3rem; margin-top:-5px; margin-left: 10px;">{{ $score->question->title }}</p>
       @endif
     </div>
 
