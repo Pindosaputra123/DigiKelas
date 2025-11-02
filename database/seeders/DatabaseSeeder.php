@@ -63,9 +63,153 @@ class DatabaseSeeder extends Seeder
 
         // materi
         Materi::create([
-            'image' => 'assets/img/aksara/aksara_ba.png',
-            'title' => 'Ba',
-            'audio' => 'assets/audio/jakarta.mp3',
+            'image' => 'assets/img/aksara/a.png',
+            'title' => 'a',
+            'audio' => 'assets/audio/indonesia.mp3',
+        ]);
+
+        Materi::create([
+            'image' => 'assets/img/aksara/i.png',
+            'title' => 'i',
+            'audio' => 'assets/audio/indonesia.mp3',
+        ]);
+
+        Materi::create([
+            'image' => 'assets/img/aksara/u.png',
+            'title' => 'u',
+            'audio' => 'assets/audio/indonesia.mp3',
+        ]);
+
+        Materi::create([
+            'image' => 'assets/img/aksara/e.png',
+            'title' => 'e',
+            'audio' => 'assets/audio/indonesia.mp3',
+        ]);
+
+        Materi::create([
+            'image' => 'assets/img/aksara/o.png',
+            'title' => 'o',
+            'audio' => 'assets/audio/indonesia.mp3',
+        ]);
+
+        Materi::create([
+            'image' => 'assets/img/aksara/ka.png',
+            'title' => 'ka',
+            'audio' => 'assets/audio/indonesia.mp3',
+        ]);
+
+        Materi::create([
+            'image' => 'assets/img/aksara/ki.png',
+            'title' => 'ki',
+            'audio' => 'assets/audio/indonesia.mp3',
+        ]);
+
+        Materi::create([
+            'image' => 'assets/img/aksara/ku.png',
+            'title' => 'ku',
+            'audio' => 'assets/audio/indonesia.mp3',
+        ]);
+
+        Materi::create([
+            'image' => 'assets/img/aksara/ke.png',
+            'title' => 'ke',
+            'audio' => 'assets/audio/indonesia.mp3',
+        ]);
+
+        Materi::create([
+            'image' => 'assets/img/aksara/ko.png',
+            'title' => 'ko',
+            'audio' => 'assets/audio/indonesia.mp3',
+        ]);
+
+        Materi::create([
+            'image' => 'assets/img/aksara/sa.png',
+            'title' => 'sa',
+            'audio' => 'assets/audio/jepang.mp3',
+        ]);
+
+        Materi::create([
+            'image' => 'assets/img/aksara/shi.png',
+            'title' => 'shi',
+            'audio' => 'assets/audio/jepang.mp3',
+        ]);
+
+        Materi::create([
+            'image' => 'assets/img/aksara/su.png',
+            'title' => 'su',
+            'audio' => 'assets/audio/jepang.mp3',
+        ]);
+
+        Materi::create([
+            'image' => 'assets/img/aksara/se.png',
+            'title' => 'se',
+            'audio' => 'assets/audio/jepang.mp3',
+        ]);
+
+        Materi::create([
+            'image' => 'assets/img/aksara/so.png',
+            'title' => 'so',
+            'audio' => 'assets/audio/jepang.mp3',
+        ]);
+
+        Materi::create([
+            'image' => 'assets/img/aksara/ta.png',
+            'title' => 'ta',
+            'audio' => 'assets/audio/jepang.mp3',
+        ]);
+
+        Materi::create([
+            'image' => 'assets/img/aksara/chi.png',
+            'title' => 'chi',
+            'audio' => 'assets/audio/jepang.mp3',
+        ]);
+
+        Materi::create([
+            'image' => 'assets/img/aksara/tsu.png',
+            'title' => 'tsu',
+            'audio' => 'assets/audio/jepang.mp3',
+        ]);
+
+        Materi::create([
+            'image' => 'assets/img/aksara/te.png',
+            'title' => 'te',
+            'audio' => 'assets/audio/jepang.mp3',
+        ]);
+
+        Materi::create([
+            'image' => 'assets/img/aksara/to.png',
+            'title' => 'to',
+            'audio' => 'assets/audio/jepang.mp3',
+        ]);
+
+        Materi::create([
+            'image' => 'assets/img/aksara/na.png',
+            'title' => 'na',
+            'audio' => 'assets/audio/jepang.mp3',
+        ]);
+
+        Materi::create([
+            'image' => 'assets/img/aksara/ni.png',
+            'title' => 'ni',
+            'audio' => 'assets/audio/jepang.mp3',
+        ]);
+
+        Materi::create([
+            'image' => 'assets/img/aksara/nu.png',
+            'title' => 'nu',
+            'audio' => 'assets/audio/jepang.mp3',
+        ]);
+
+        Materi::create([
+            'image' => 'assets/img/aksara/ne.png',
+            'title' => 'ne',
+            'audio' => 'assets/audio/jepang.mp3',
+        ]);
+
+        Materi::create([
+            'image' => 'assets/img/aksara/no.png',
+            'title' => 'no',
+            'audio' => 'assets/audio/jepang.mp3',
         ]);
 
 
