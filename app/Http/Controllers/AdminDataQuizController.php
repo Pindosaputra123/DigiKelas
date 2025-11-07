@@ -98,7 +98,7 @@ class AdminDataQuizController extends Controller
             // Tambahkan pertanyaan baru
             $newRecordQuestion = Question::create([
                 'quiz_id' => $quiz->id,
-                'question' => $validated['question'],
+                'title' => $validated['question'],
                 'score' => $validated['score']
             ]);
 
@@ -160,7 +160,7 @@ class AdminDataQuizController extends Controller
         ]);
 
         // Siapkan data untuk update
-        $validated['question'] = $validated['editQuestion'];
+        $validated['title'] = $validated['editQuestion'];
         $validated['score'] = $validated['editScore'];
         unset($validated['editQuestion'], $validated['editScore']);
 
@@ -181,7 +181,7 @@ class AdminDataQuizController extends Controller
             $question_id = decrypt($request->codeQuestion);
             // Update pertanyaan
             Question::where('id', $question_id)->update([
-                'question' => $validated['question'],
+                'title' => $validated['title'],
                 'score' => $validated['score']
             ]);
 
