@@ -1,66 +1,100 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+## Tentang DigiKelas
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<b>DigiKelas</b> adalah aplikasi belajar Bahasa Jepang yang menghadirkan pengalaman belajar yang mudah, interaktif, dan menyenangkan. Dirancang untuk pemula hingga tingkat menengah, DigiKelas membantu kamu menguasai aksara Jepang dan memahami bahasa Jepang melalui metode belajar yang ringan tetapi efektif.
 
-## About Laravel
+### Fitur DigiKelas:
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+#### Admin
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+-   <b>Dashboard</b><br>
+    Di dalam 'Dashboard', admin bisa melihat statistik pengguna yang mengerjakan quiz, total pengguna, dan total quiz.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+-   <b>Data Materi</b><br>
+    Dalam menu 'Data Materi', admin dapat melakukan insert data materi, update data materi, dan juga delete data materi. Selain itu, terdapat juga fitur searching untuk melakukan filter saat mencari data materi. Data materi berisi gambar, judul, dan juga audio.
 
-## Learning Laravel
+-   <b>Data Quiz</b><br>
+    Di dalam menu 'Data Quiz', admin dapat melakukan insert data quiz, update data quiz, delete data quiz, lihat pertanyaan, tambah pertanyaan, update pertanyaan, dan juga delete pertanyaan. Terdapat juga fitur pencarian data quiz dan juga data pertanyaan.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+-   <b>Laporan</b><br>
+    Dalam menu 'Laporan', admin dapat melihat siapa saja yang sudah mengerjakan quiz, serta dapat melihat jawaban dan juga nilai pengguna aplikasi.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+-   <b>Pengaturan</b><br>
+    Di menu 'Pengaturan', admin dapat melihat dan mengubah informasi identitas pribadi, termasuk perubahan identitas, perubahan password, dan pengaturan lain yang terkait dengan aplikasi.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+#### Member
 
-## Laravel Sponsors
+-   <b>Materi</b><br>
+    Di menu 'Materi', pengguna dapat mempelajari berbagai aksara Jepang secara lengkap. Materi disajikan dengan visual yang jelas, contoh kata, serta audio pelafalan untuk membantu memahami cara baca yang benar
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+-   <b>Quiz</b><br>
+    Dalam menu 'Quiz', terdapat soal-soal yang bisa dikerjakan untuk melatih pemahaman tentang aksara Jepang. Quiz ini bisa dikerjakan secara berulang-ulang.
 
-### Premium Partners
+-   <b>Nilai</b><br>
+    Setiap selesai menjawab quiz, pengguna dapat melihat nilainya langsung di menu 'Nilai'. Pengguna juga dapat melihat pertanyaan mana saja yang jawabannya benar dan juga salah. Selain itu, pengguna juga bisa menghapus histori mengerjakan quiznya.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+-   <b>Pengaturan</b><br>
+    Dalam menu 'Pengaturan', pengguna dapat melihat dan mengubah identitas diri seperti nama, alamat, foto profil dan lain-lain. Pengguna juga dapat mengubah password.
 
-## Contributing
+## Installation
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+#### 1. Clone the repository
 
-## Code of Conduct
+```sh
+git clone https://github.com/Pindosaputra123/DigiKelas.git
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+#### 2. Change Directory
 
-## Security Vulnerabilities
+```sh
+cd DigiKelas
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+#### 3. Copy .env
 
-## License
+```sh
+cp .env.example .env
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+#### 4. Configure .env
+
+```sh
+FILESYSTEM_DISK=public
+```
+
+#### 5. Install depedencies
+
+```sh
+composer install
+```
+
+#### 6. Generate Key
+
+```sh
+php artisan key:generate
+```
+
+#### 7. Run Symlink
+
+```sh
+php artisan storage:link
+```
+
+#### 8. Migrate database
+
+```sh
+php artisan migrate
+```
+
+#### 9. Database seeders
+
+```sh
+php artisan db:seed
+```
+
+#### 10. Run application
+
+```sh
+php artisan serve
+```
+
+##### <i><b>Note:<br>username: pindo & password: pindo123 <br> username: dunik & password: dunik123</b></i>
