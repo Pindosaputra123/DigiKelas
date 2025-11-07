@@ -65,61 +65,61 @@ class DatabaseSeeder extends Seeder
         Materi::create([
             'image' => 'assets/img/aksara/a.png',
             'title' => 'a',
-            'audio' => 'assets/audio/indonesia.mp3',
+            'audio' => 'assets/audio/jepang.mp3',
         ]);
 
         Materi::create([
             'image' => 'assets/img/aksara/i.png',
             'title' => 'i',
-            'audio' => 'assets/audio/indonesia.mp3',
+            'audio' => 'assets/audio/jepang.mp3',
         ]);
 
         Materi::create([
             'image' => 'assets/img/aksara/u.png',
             'title' => 'u',
-            'audio' => 'assets/audio/indonesia.mp3',
+            'audio' => 'assets/audio/jepang.mp3',
         ]);
 
         Materi::create([
             'image' => 'assets/img/aksara/e.png',
             'title' => 'e',
-            'audio' => 'assets/audio/indonesia.mp3',
+            'audio' => 'assets/audio/jepang.mp3',
         ]);
 
         Materi::create([
             'image' => 'assets/img/aksara/o.png',
             'title' => 'o',
-            'audio' => 'assets/audio/indonesia.mp3',
+            'audio' => 'assets/audio/jepang.mp3',
         ]);
 
         Materi::create([
             'image' => 'assets/img/aksara/ka.png',
             'title' => 'ka',
-            'audio' => 'assets/audio/indonesia.mp3',
+            'audio' => 'assets/audio/jepang.mp3',
         ]);
 
         Materi::create([
             'image' => 'assets/img/aksara/ki.png',
             'title' => 'ki',
-            'audio' => 'assets/audio/indonesia.mp3',
+            'audio' => 'assets/audio/jepang.mp3',
         ]);
 
         Materi::create([
             'image' => 'assets/img/aksara/ku.png',
             'title' => 'ku',
-            'audio' => 'assets/audio/indonesia.mp3',
+            'audio' => 'assets/audio/jepang.mp3',
         ]);
 
         Materi::create([
             'image' => 'assets/img/aksara/ke.png',
             'title' => 'ke',
-            'audio' => 'assets/audio/indonesia.mp3',
+            'audio' => 'assets/audio/jepang.mp3',
         ]);
 
         Materi::create([
             'image' => 'assets/img/aksara/ko.png',
             'title' => 'ko',
-            'audio' => 'assets/audio/indonesia.mp3',
+            'audio' => 'assets/audio/jepang.mp3',
         ]);
 
         Materi::create([
