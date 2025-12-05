@@ -1,3 +1,9 @@
+# Anggota Kelompok
+1. Pindo Saputra Harmanto
+2. Dunik Andriyani
+3. Ilham Syihabudin
+
+
 ## Tentang DigiKelas
 
 <b>DigiKelas</b> adalah aplikasi belajar Bahasa Jepang yang menghadirkan pengalaman belajar yang mudah, interaktif, dan menyenangkan. Dirancang untuk pemula hingga tingkat menengah, DigiKelas membantu kamu menguasai aksara Jepang dan memahami bahasa Jepang melalui metode belajar yang ringan tetapi efektif.
@@ -96,5 +102,20 @@ php artisan db:seed
 ```sh
 php artisan serve
 ```
+
+## Demo
+<p align="center">
+  <video src="https://private-user-images.githubusercontent.com/113245491/522844642-5cb3105d-ac02-425e-b113-d9f875633f2e.mp4" 
+         controls 
+         width="700">
+  </video>
+</p>
+
+<p align="center">
+  <video src="https://private-user-images.githubusercontent.com/113245491/522848547-80e21c04-686c-439d-b5a2-9c3a82b3ffa4.mp4" 
+         controls 
+         width="700">
+  </video>
+</p>
 
 ##### <i><b>Note:<br>username: pindo & password: pindo123 <br> username: dunik & password: dunik123</b></i>
